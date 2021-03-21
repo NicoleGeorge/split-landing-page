@@ -36,13 +36,13 @@ h1 {
   position: absolute;
   left: 50%;
   top: 40%;
-  height: 2.5rem;
+  height: 2rem;
   padding-top: 1.3rem;
-  width: 15rem;
+  width: 10rem;
   text-align: center;
   color: #fff;
   border: #fff solid 0.2rem;
-  border-radius: 1.5rem;
+  border-radius: 4rem;
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -50,4 +50,12 @@ h1 {
   transform: translateX(-50%);
 }
 
+.split.left .btn:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+}
 
+.split.right .btn:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
