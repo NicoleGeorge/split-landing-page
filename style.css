@@ -2,10 +2,10 @@
 
 :root {
   --container-background-color: #ddd2c9;
-  --left-bg-color: #f0bd6a68;
+  --left-bg-color: rgba(17, 17, 17, 0.3);
   --left-button-hover-color: #679b5387;
-  --right-bg-color: #b47352b8;
-  --right-button-hover-color: #D27309;
+  --right-bg-color: rgba(17, 17, 17, 0.3);
+  --right-button-hover-color: #d27409b8;
   --hover-width: 75%;
   --other-width: 25%;
   --speed: 1000ms;
@@ -41,7 +41,7 @@ h1 {
   width: 10rem;
   text-align: center;
   color: #fff;
-  border: #fff solid 0.2rem;
+  border: #fff solid 0.1rem;
   border-radius: 4rem;
   font-size: 1rem;
   font-weight: 400;
@@ -52,12 +52,12 @@ h1 {
 
 .split.left .btn:hover {
   background-color: var(--left-button-hover-color);
-  border-color: var(--left-button-hover-color);
+  border: var(--left-button-hover-color);
 }
 
 .split.right .btn:hover {
   background-color: var(--right-button-hover-color);
-  border-color: var(--right-button-hover-color);
+  border: var(--right-button-hover-color);
 }
 
 .container {
@@ -88,3 +88,16 @@ h1 {
   background: var(--left-bg-color);
 }
 
+.split.right {
+  right: 0;
+  background: url('assets/programmer.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+}
